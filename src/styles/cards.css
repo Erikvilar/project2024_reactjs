@@ -1,0 +1,121 @@
+.card {
+  width: 280px;
+  height: 350px;
+ 
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: relative;
+  color: white;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  border-bottom:3px solid #711f84 ;
+
+}
+.card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity .2s ease-out;
+}
+.card h2 {
+  position: absolute;
+  inset: auto auto 0px 0px;
+  padding-top: 10px;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(141, 140, 140, 0.283);
+  transition: inset .3s .3s ease-out;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+.card p, .card a {
+  position: absolute;
+  opacity: 0;
+  max-width: 80%;
+  transition: opacity .3s ease-out;
+}
+.card p {
+  inset: auto auto 25px 30px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 18px;
+  
+}
+.card a {
+  inset: auto auto 40px 30px;
+  color: inherit;
+  text-decoration: none;
+}
+.card:hover h2 {
+  inset: auto auto 315px 0px;
+  transition: inset .5s ease-out;
+}
+.card:hover {
+  transform: scale(1.1);
+  margin-right: 50px;
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px #ff0000,0px 0px 60px #666565;
+}.card:nth-child(1):hover{
+  box-shadow: 0px 0px 30px #505074,0px 0px 60px #666565;
+  
+  border-bottom: 3px solid #505074;
+
+
+}.card:nth-child(2):hover{
+  box-shadow: 0px 0px 30px #628464,0px 0px 60px #666565;
+  border-bottom: 3px solid #628464;
+}.card:nth-child(3):hover{
+  box-shadow: 0px 0px 30px #817e4b,0px 0px 60px #666565;
+  border-bottom: 3px solid #817e4b;
+}.card:nth-child(4):hover{
+  box-shadow: 0px 0px 30px #429741,0px 0px 60px #666565;
+  border-bottom: 3px solid #429741;
+}.card:nth-child(5):hover{
+  box-shadow: 0px 0px 30px #f5b16c,0px 0px 60px #666565;
+  border-bottom: 3px solid #f5b16c;
+}
+.card:hover p, .card:hover > a {
+  opacity: 1;
+  transition: opacity .5s .5s ease-in;
+}
+.card:hover img {
+  transition: opacity 0.3s ease-in;
+  filter: brightness(0.5);
+  opacity: 1;
+}.project{
+  width: 700px;
+  height: 400px;
+
+  margin: 5px;
+  margin-top: 50px;
+
+
+}
+.project h2{
+  color: white;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+.project p{
+  text-align: center;
+}
+.project img{
+  border-radius: 8px;
+  width: 100%;;
+  height:100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.project img:active{
+transform: scale(1.5);
+border: 1px solid white;
+}

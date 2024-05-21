@@ -1,0 +1,26 @@
+
+@media (max-width: 1920px) {
+    html {
+        margin: 0;
+    
+        scroll-behavior: smooth;
+    }
+    body{
+        width: 1536px;
+    }
+    .general-content{
+        width: 1500px;
+    }
+    
+}
+@media (min-width: 1920px) {
+    html {
+        margin: 0;
+    
+        scroll-behavior: smooth;
+    }
+    body{
+        width: 1920px;
+    }
+    
+}
