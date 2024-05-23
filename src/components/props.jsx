@@ -1,13 +1,10 @@
 export const Content = ({ text, link }) => {
     return (
       <div className="first-content">
-  
         <div>
           <p>{text}</p>
         </div>
         <Images link={link} />
-  
-  
       </div>
     )
   };
@@ -15,7 +12,6 @@ export const Content = ({ text, link }) => {
     return (
       <section className="general-content" id={props.id}>
         <h3>{props.title}</h3>
-  
       </section>
     )
   };

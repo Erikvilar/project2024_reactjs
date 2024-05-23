@@ -26,12 +26,13 @@
   inset: auto auto 0px 0px;
   padding-top: 10px;
   width: 100%;
+  color: rgb(181, 178, 178);
+  text-align: center;
   margin: 0;
   background-color: rgba(141, 140, 140, 0.283);
   transition: inset .3s .3s ease-out;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: normal;
-  text-transform: uppercase;
 }
 .card p, .card a {
   position: absolute;

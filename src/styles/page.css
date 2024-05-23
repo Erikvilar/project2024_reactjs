@@ -1,4 +1,5 @@
 /* Autor: Erik Alves Vilar 
+
 date: 09/04/2024*/
 /*-- fonts -- */
 /*poppins*/
@@ -6,6 +7,8 @@ date: 09/04/2024*/
 /*Monstreat*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@media (max-width: 1920px) {
+    
 
 * {
     box-sizing: border-box;
@@ -20,19 +23,17 @@ body::-webkit-scrollbar {
 html,
 body {
     margin: 0;
+    width: 100%;
+    height: auto;
 
     scroll-behavior: smooth;
 }
 
 
 body {
-
-
-
     display: flex;
     margin: auto;
     flex-direction: column;
-
 }
 .top-nav {
     position: fixed;
@@ -43,8 +44,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: #00BAF0;
-    background-color: #313131;
+    background: linear-gradient(58deg, #0b0b0b 30%, #738a95 100%);
     color: #FFF;
     height: 50px;
     padding: 1em;
@@ -66,7 +66,7 @@ body {
 }
 
 .menu>li:hover {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.507);
+    border-bottom: 1px solid rgba(227, 126, 10, 0.922);
 }
 
 .menu a {
@@ -237,7 +237,7 @@ body {
     text-align: center;
     color: white;
     opacity: 0.8;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .quote {
@@ -245,17 +245,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 200px;
 }
 
 .quote :nth-child(1) {
     text-align: center;
     font-size: 18px;
+
     color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
     letter-spacing: 2px;
     font-weight: 300;
     line-height: 30px;
-    padding-top: 50px;
     margin-right: 50px;
     font-style: italic;
 }
@@ -273,40 +274,37 @@ body {
 
 /* buttons*/
 .button {
-    appearance: none;
+  
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
     background-color: #070024;
     border: 2px solid #1A1A1A;
     border-radius: 15px;
-    box-sizing: border-box;
     cursor: pointer;
-    display: inline-block;
     font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 16px;
     font-weight: 600;
-    line-height: normal;
-    min-height: 60px;
-    min-width: 0;
-    margin: auto;
     outline: none;
     padding: 16px 24px;
     text-align: center;
     text-decoration: none;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
     user-select: none;
-    margin-top: 100px;
     -webkit-user-select: none;
-    touch-action: manipulation;
     width: 250px;
     height: 100px;
     color: white;
-    will-change: transform;
-}
-
-
-
-.link_button {
+  
     margin: auto;
+}a{
+    text-decoration: none;
 }
+
+
+
+
 
 
 .button:disabled {
@@ -331,18 +329,31 @@ body {
 /*End header conf*/
 main {
     width: 100%;
-    height: 8000px;
+    height: auto;
+
     margin: auto;
     background-image: linear-gradient(to top, #5c6674, #4a4b56, #363238, #1f1c1e, #000000);
 }
 
 .general-content {
-    padding-top: 100px;
+    padding-top: 250px;
     width: 1500px;
-    height: 850px;
-
+    height: auto;
     margin: auto;
 }
+.general-content:nth-child(3){
+  height:auto;
+  padding-bottom: 50px;
+
+}
+.general-content:nth-child(3){
+  height:auto;
+
+  
+
+}
+
+
 
 
 
@@ -413,23 +424,30 @@ main {
     font-family: "Montserrat", sans-serif;
     font-weight: 200;
     padding-left: 50px;
+}.box-scrolling{
+    overflow: none;
 }
 
 .box-knowledges {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 50px;
     justify-content: center;
     padding-bottom: 100px;
     flex-wrap: wrap;
-
-
-
+}.box-projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
 }
-
-
 .second-content {
     width: 1500px;
+    
+    height: auto;
     padding-top: 50px;
 }
 
@@ -441,16 +459,15 @@ main {
     line-height: 40px;
     color: rgb(255, 255, 255);
     font-family: "Montserrat", sans-serif;
-    margin-bottom: 20px;
+   
     font-weight: 300;
     padding-left: 50px;
 }
 
 /*Exclusive conf*/
 
-
-.note1 {
-    background: linear-gradient(17deg, #e22cdb 0%, #f98113 100%);
+.note{
+    background: linear-gradient(17deg, #ab7141 0%, #0f1b7d89 100%);
     border-radius: 9px;
     text-align: center;
     margin-bottom: 20px;
@@ -458,22 +475,21 @@ main {
     margin: auto;
 
 }
-
-.note2 {
-    background: linear-gradient(17deg, #6b789e 0%, #3e3c3b 100%);
-    border-radius: 9px;
-    padding: 10px;
-    width: 100%;
-    margin: auto;
-
+.note:nth-child(odd){
+    background: linear-gradient(17deg, #335169 0%, #fa03b0 100%);
 }
+
+
+
 
 .contentJsonBox {
     width: 1000px;
+  
     margin: auto;
     display: flex;
     flex-direction: row;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
 
 }
 
@@ -492,7 +508,6 @@ main {
     border: 1px solid rgb(68, 134, 184);
     border-radius: 20px;
     margin-left: 20px;
-    width: 500px;
     padding: 10px;
 
 }
@@ -528,4 +543,77 @@ main {
 
 .contentJson a {
     color: white;
+}.game{
+    width: 420px;
+    height: 350px;
+    border-radius: 15px;
+    border: 1px solid rgb(255, 119, 0);
+    margin: auto;
+    margin-top: 50px;
+    transition: 0.3s ease;
+
+
+}.game:hover{
+    transform: scale(1.2);
+}.game img{
+    width: 420px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 350px;
+}.game h2{
+    text-align: center;
+    font-weight: 200;
+    font-family: 'Montserrat',sans-serif;
+    color: white;
+}
+.gamebox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+}footer{
+
+    height: 200px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #5c6674, #525c6b, #485362, #3e4959, #354050, #303746, #000000,  #000000,  #000000,  #000000,  #000000, #000000);
+
+}.bottomBox{
+    width: 500px;
+    height: 80px;
+    cursor: pointer;
+    margin: auto;
+    display: flex;
+    position: relative;
+    top: 110px;
+
+
+
+}.bottomBox ul{
+   display: inline-block;
+   margin-top: 20px;
+
+
+
+}.bottomBox ul li{
+   display: inline-block;
+   margin: 10px;
+
+
+}.bottomBox ul li a{
+ color: white;
+ 
+ text-decoration: none;
+ font-weight: 100;
+ font-family: 'Montserrat',sans-serif;
+
+
+}.bottomBox img{
+    width: 80px;
+    height: 80px;
+    border-radius:360px ;
+
+}
 }
