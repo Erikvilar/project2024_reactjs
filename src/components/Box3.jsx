@@ -97,7 +97,7 @@ function Box3() {
           <Card
             class="project"
             title="Back-End"
-            link="src/components/images/img_pages/project1BackEnd.png"
+            link="src/components/images/img_pages/project1Backend.png"
 
           />
           <Card
