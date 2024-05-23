@@ -91,19 +91,19 @@ function Box3() {
           <Card
             class="project"
             title="Front-End"
-            link="src/assets/images/img_pages/project1Front.jpg"
+            link="src/components/images/img_pages/project1Front.jpg"
 
           />
           <Card
             class="project"
             title="Back-End"
-            link="src/assets/images/img_pages/project1BackEnd.png"
+            link="src/components/images/img_pages/project1BackEnd.png"
 
           />
           <Card
             class="project"
             title="Database"
-            link="src/assets/images/img_pages/project1Database.jpg"
+            link="src/components/images/img_pages/project1Database.jpg"
 
           />
         </div>
@@ -120,25 +120,25 @@ function Box3() {
           <Card
             class="project"
             title="Front-End"
-            link="src/assets/images/img_pages/project2-1.jpg"
+            link="src/components/images/img_pages/project2-1.jpg"
 
           />
           <Card
             class="project"
             title="Front-End"
-            link="src/assets/images/img_pages/project2-2.jpg"
+            link="src/components/images/img_pages/project2-2.jpg"
 
           />
           <Card
             class="project"
             title="Back-End"
-            link="src/assets/images/img_pages/project2-3.jpg"
+            link="src/components/images/img_pages/project2-3.jpg"
 
           />
           <Card
             class="project"
             title="Database"
-            link="src/assets/images/img_pages/project2-4.jpg"
+            link="src/components/images/img_pages/project2-4.jpg"
 
           />
         </div>
@@ -154,13 +154,13 @@ function Box3() {
           <Card
             class="project"
             title="Code View"
-            link="src/assets/images/img_pages/project3.jpg"
+            link="src/components/images/img_pages/project3.jpg"
 
           />
           <Card
             class="project"
             title="Code View"
-            link="src/assets/images/img_pages/project3-1.jpg"
+            link="src/components/images/img_pages/project3-1.jpg"
 
           />
 
@@ -176,22 +176,22 @@ function Box3() {
           <Card
             class="game"
             title="Game"
-            link="src/assets/images/img_pages/pacman1-1.jpg"
+            link="src/components/images/img_pages/pacman1-1.jpg"
           />
           <Card
             class="game"
             title="Game"
-            link="src/assets/images/img_pages/pacman1-2.jpg"
+            link="src/components/images/img_pages/pacman1-2.jpg"
           />
           <Card
             class="game"
             title="Game"
-            link="src/assets/images/img_pages/pacman1-3.jpg"
+            link="src/components/images/img_pages/pacman1-3.jpg"
           />
           <Card
             class="game"
             title="Game"
-            link="src/assets/images/img_pages/pacman1-4.jpg"
+            link="src/components/images/img_pages/pacman1-4.jpg"
           />
         </div>
         <p>Primeiramente para construir precisamos primeiro fazer o canvas ou seja desenhar bit a bit o campo onde o jogo ocorre (foi extremamente complexa essa parte) em seguida por meio do canvas fill.rect fazemos o preenchimento do blocos dando cor ao campo e o mesmo conceito é usado para os <i>Foods</i> presentes no campo, após isso definimos intervalos para o jogo acontecer como, iniciar, pausar, e reiniciar, tudo feito com <i>set.interval, clear.interval e set.timeout.</i></p>
@@ -200,19 +200,19 @@ function Box3() {
 
             class="game"
             title="Game"
-            link="src/assets/images/img_pages/pacmanSchema.jpg"
+            link="src/components/images/img_pages/pacmanSchema.jpg"
           />
           <Card
 
             class="game"
             title="Game"
-            link="src/assets/images/img_pages/pacmanSchema1.jpg"
+            link="src/components/images/img_pages/pacmanSchema1.jpg"
           />
           <Card
 
             class="game"
             title="Game"
-            link="src/assets/images/img_pages/pacmanSchema2.jpg"
+            link="src/components/images/img_pages/pacmanSchema2.jpg"
           />
         </div>
         <p>A parede ou seja as walls são esquematizadas em bits correspondentes entre (0 e 1) o 0 indica passagem livre e o 1 indica que a uma box impedindo a passagem, dessa forma e possivel criar um canvas para este jogo como no exemplo acima. Já as animações do pacman e os ghosts são feitos por recortes chamada de keys, e animadas com a propriedade do JS chamada AnimationFrame (CanvasContext), claro existe bem mais conceitos visto que uma parte avançada na linguagem JS.</p>

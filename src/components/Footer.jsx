@@ -5,7 +5,7 @@ function Footer (){
     return(
         <footer>
             <div className="bottomBox">
-            <img src="src\assets\images\background\assign.png" alt="" />
+            <img src="src/components/images/background/assign.png" alt="" />
             <ul>
                 <li><a href="">© 2024</a></li>
                 <li><a href="https://github.com/Erikvilar">MyGithub</a></li>

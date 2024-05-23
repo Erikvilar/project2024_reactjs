@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import './styles/page.css'
-import './styles/cards.css'
-import './styles/mobile.css'
-import'./styles/responsive.css'
+import './components/styles/page.css'
+import './components/styles/cards.css'
+import './components/styles/mobile.css'
+import'./components/styles/responsive.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
